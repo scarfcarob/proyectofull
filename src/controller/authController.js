@@ -6,7 +6,7 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-const AuthController = {                                  // funciones de registro y login
+const AuthController = {
   // Registro de usuario
   async register(req, res) {
     try {
@@ -51,10 +51,6 @@ const AuthController = {                                  // funciones de regist
         return res.status(401).json({ error: 'Contraseña incorrecta' });
       }
 
-
-    console.log('JWT_SECRET:', process.env.JWT_SECRET);
-
-
       // Crear token JWT
       const token = jwt.sign(
         { id: usuario.id, email: usuario.email, tipo: usuario.tipo },
@@ -71,12 +67,3 @@ const AuthController = {                                  // funciones de regist
 };
 
 export default AuthController;
-
-
-
-
-
-
-
-
-

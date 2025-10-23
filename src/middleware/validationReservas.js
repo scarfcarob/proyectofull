@@ -1,5 +1,5 @@
 
-// Validaciones para reservas
+// Validaciones para reservas       // arreglar o sacar
 
 export const validateReservas = [
     body("usuarioId")

@@ -1,5 +1,5 @@
 
-// Validaciones para horarios
+// Validaciones para horarios   // arreglar o sacar
 
 export const validateHorarios = [
     body("canchaId")

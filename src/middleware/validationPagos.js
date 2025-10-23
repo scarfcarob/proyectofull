@@ -1,5 +1,5 @@
 
-// Validaciones para pagos
+// Validaciones para pagos       // arreglar o sacar
 
 export const validatePagos = [
     body("monto")

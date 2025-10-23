@@ -17,7 +17,7 @@ router.get('/', CanchaController.getAll);
 router.get('/:id', CanchaController.getById);
 
 // Rutas protegidas (solo usuarios logueados)
-router.post('/', verifyToken, isAdmin, CanchaController.create);
+router.post('/', verifyToken, isAdmin, CanchaController.create);   // fijate si sacas estas lienas de verifyToken(borrast el archivo)
 router.put('/:id', verifyToken, isAdmin, CanchaController.update);
 router.delete('/:id', verifyToken, isAdmin, CanchaController.delete);
 

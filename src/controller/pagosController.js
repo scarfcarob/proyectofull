@@ -1,5 +1,4 @@
 
-///..............................
 
 import Pago from '../model/pagos.js';
 

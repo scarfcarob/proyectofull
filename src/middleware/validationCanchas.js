@@ -1,5 +1,5 @@
 
-// Validaciones para canchas
+// Validaciones para canchas     // arreglar:
 
 export const validateCanchas = [
     body("nombre")
